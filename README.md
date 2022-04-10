@@ -19,7 +19,7 @@ npm start
 **Do the same for the client, find the commands down below :**
 
 ```
-cd server
+cd client
 npm install
 ```
 
