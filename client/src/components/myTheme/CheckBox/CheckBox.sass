@@ -1,0 +1,49 @@
+.checkbox_container
+    margin: 10px 0  
+    padding-left: 30px
+    display: block
+    position: relative
+    cursor: pointer
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+    input 
+        position: absolute
+        opacity: 0
+        cursor: pointer
+        height: 0
+        width: 0
+
+        &:checked + .checkbox
+            background: #1F5EFF
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5)
+            border: 2px solid transparent
+            border-radius: 6px
+            i
+                opacity: 1
+    .checkbox
+        position: absolute
+        left: 0
+        top: 50%
+        height: 25px
+        width: 25px
+        background: #323741
+        border: 2px solid #484D5A
+        border-radius: 6px
+        transform: translateY(-50%)
+        transition: all 300ms ease-in-out
+        &:hover
+            background: #21356A
+            border: 2px solid #1F5EFF
+        i
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            opacity: 0
+            transition: opacity 200ms ease-in-out
+
+
+

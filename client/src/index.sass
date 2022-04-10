@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap')
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    
+html, body, #root
+    height: 100vh
+
+body
+    padding: 0
+    background: #22242A
+    //background: #F1F2F6
+    font:
+        family: 'Montserrat', sans-serif
+    color: #D8DEE9
+
+.container
+    margin: 0 auto
+    padding: 40px
+    max-width: 1200px
+    height: 100%
+
+h1
+    margin-bottom: 20px
+
+.btn
+    margin: 20px 0
+    padding: 10px 12px
+    border-radius: 8px
+    border: none
+    background: #38A2FE
+    color: #fff
+    &:hover
+        background: darken(#38A2FE, 10%)
+
+
+section#addReccord
+    padding: 40px
+    background: #fff
+    border-radius: 10px
+    color: #161616
+
+.form-group-inline
+    padding: 20px 0
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+.form-group
+    padding: 20px 0
+    display: flex
+    justify-content: space-between
+    label
+        margin-right: 20px
+        user-select: none
+    .input-field
+        width: 48%
+
+.input-field
+    padding: 10px 20px
+    //max-width: 300px
+    width: 100%
+    background: #F9FBFD
+    border: 1px solid #ddd
+    border-radius: 10px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    label
+        margin-bottom: 5px
+        text-transform: capitalize
+        font:
+            size: 13px
+            weight: 500
+        color: #BDBEC2
+    
+    input
+        padding: 0
+        background: transparent
+        border: none
+        outline: none
+        font:
+            family: 'Montserrat', sans-serif
+            weight: 600
+        color: #161616
+
+.authentication-form
+    margin: 0
+    padding: 0
+    width: 100%
+    max-width: 480px
+
+    .form-group
+        margin: 10px
+        display: flex
+        flex-direction: column
+
+#about
+    height: calc(100vh - 100px)
+    display: flex
+    justify-content: center
+    align-items: center
+
+#login
+    height: calc(100vh - 100px)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.NotFound
+    background-image: url('../public/assets/images/404.jpg'),
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    height: 100vh,
+    display: flex,
+    flex-direction: column,
+    justify-content: center,
+    align-items: center
+    h1
+        font-size: 80px,
+        text-shadow: 0 0 4px rgba(0, 0, 0, .4), 0 0 12px rgba(255,255,255,1)
+    p
+        font-size: 24px
+        
+@keyframes line-anim
+    to
+        stroke-dashoffset: 0
+        
+@keyframes fill
+    to
+        fill: #093597
